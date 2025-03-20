@@ -19,8 +19,8 @@ Das Projekt verwendet Maven als Build-Tool und ist als Java-Anwendung mit Spring
 
 ## Aufgaben für Studierende
 1. **Verstehen der aktuellen Implementierung**: Analysieren Sie den bestehenden Code und verstehen Sie, wie die Welt und ihre Zellen modelliert werden.
-2. **Korrigieren der Implementierung**: Die aktuelle Implementierung enthält Fehler in den Regeln des Spiels. Korrigieren Sie diese basierend auf den oben genannten Regeln.
-3. **Implementieren der Web-API**: Entwickeln Sie eine Webanwendung, die das in `src/main/resources/gol.openapi.yaml` spezifizierte HTTP-Interface implementiert. Die API soll folgende Funktionalität bieten:
+
+2. **Implementieren der Web-API**: Entwickeln Sie eine Webanwendung, die das in `src/main/resources/gol.openapi.yaml` spezifizierte HTTP-Interface implementiert. Die API soll folgende Funktionalität bieten:
    - Einen Endpunkt `/generate_world`, der eine POST-Anfrage mit einer Welt und einer Generationsnummer akzeptiert
    - Die Welt für die angegebene Anzahl von Generationen simulieren
    - Die resultierende Welt als JSON-Antwort zurückgeben
@@ -30,6 +30,12 @@ Das Projekt verwendet Maven als Build-Tool und ist als Java-Anwendung mit Spring
    - Implementieren Sie dann die Funktionalität, um die Tests zu bestehen
    - Refaktorisieren Sie den Code nach Bedarf, während Sie sicherstellen, dass alle Tests weiterhin bestehen
 
+3. **Refactoring der World-Klasse**: Verbessern Sie die Struktur und Lesbarkeit der World-Klasse durch Refactoring:
+   - Extrahieren Sie sinnvolle Methoden, um die Lesbarkeit und Wartbarkeit zu verbessern
+   - Implementieren Sie eine effizientere Datenstruktur für die Zellen, falls nötig
+   - Fügen Sie Methoden hinzu, um die Konvertierung zwischen der internen Darstellung und dem API-Format zu erleichtern
+   - Stellen Sie sicher, dass alle Tests nach dem Refactoring weiterhin bestehen
+   - Dokumentieren Sie Ihre Entscheidungen und Änderungen
 
 ## Weiterführende Ressourcen
 - [Conway's Game of Life auf Wikipedia](https://de.wikipedia.org/wiki/Conways_Spiel_des_Lebens)
